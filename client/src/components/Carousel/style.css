@@ -1,0 +1,37 @@
+.pic {
+    margin-left: 10%;
+    margin-right: 15%;
+   
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+.title {
+    color: ivory;
+    margin-bottom: 0px;
+    background: rgba(167, 167, 167, 0.486); 
+    width: 275px; 
+    text-align: center;
+    margin-left: 550px;
+    
+}
+.description {
+    margin-bottom: 30px;
+    background: rgba(167, 167, 167, 0.486); 
+    width: 275px;
+    margin-left: 550px;
+    font-size: 16px;
+}
+.favbuttonc {
+    margin-bottom: 200px;
+    background-color: #ffbd59c5;
+    border-color: #ffbd5996; 
+    border-radius: 12px;
+    margin-left: 535px;
+}
+.favbuttonc:hover {
+    background-color: #ffbd59;
+    border-color: #ffbd5996;
+    border-radius: 12px;
+
+
+}

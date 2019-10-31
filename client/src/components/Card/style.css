@@ -1,0 +1,16 @@
+.text-center {
+    color: #565656;
+    font-weight: bold
+    
+}
+.favbutton {
+    background-color: #ffbd59;
+    border-color: #ffbd59;
+    border-radius: 12px;
+}
+.favbutton:hover {
+    background-color: #faac36;
+    border-color: #faac36;
+    border-radius: 15px;
+
+}
