@@ -9,6 +9,7 @@ import Card from "./components/Card"
 import MyCard from "./components/Card"
 import Home from "./pages/Home"
 import Favorites from "./pages/Favorites"
+import SignIn from './pages/SignIn';
 
 
 
@@ -19,6 +20,7 @@ function App() {
      <Switch>
          <Route exact path='/' component={Home}/>
          <Route exact path='/favorites' component={Favorites} />
+         <Route exact path='/signin' component={SignIn}/>
          <Route render={() => 404} />
       </Switch> 
       
