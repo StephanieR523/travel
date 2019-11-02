@@ -13,7 +13,8 @@
     "build": "cd client && npm run build",
     "heroku-postbuild": "npm run build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "proxy": "http://localhost:3000"
   },
   "author": "",
   "license": "ISC",
@@ -22,9 +23,12 @@
     "nodemon": "^1.18.7"
   },
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.18.1",
+    "bcrypt": "^3.0.6",
     "express": "^4.16.3",
     "if-env": "^1.0.4",
+    "joi": "^14.3.1",
+    "lodash": "^4.17.15",
     "mongoose": "^5.3.16",
     "react-bootstrap": "^1.0.0-beta.14",
     "react-router-dom": "^5.1.2"
