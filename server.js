@@ -4,6 +4,8 @@ const mongoose = require("mongoose");
 const routes = require("./routes");
 const app = express();
 const PORT = process.env.PORT || 3001;
+var cors = require('cors');
+app.use(cors());
 
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
@@ -15,21 +17,19 @@ if (process.env.NODE_ENV === "production") {
 // Add routes, both API and view
 app.use(routes);
 
-app.get("/api/users", function (req, res) {
-  db.User.find({}, function (err, found) {
-      if (err) {
-          console.log(err);
-      }
-      else {
-          res.json(found);
-      }
-  })
-})
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "http://localhost:3001"); // update to match the domain you will make the request from
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
+
+
 
 // Connect to the Mongo DB
 mongoose.connect(
   process.env.MONGODB_URI || "mongodb://localhost/user-test"
-);
+)
+.then(()=> console.log('Now connected to MongoDB!'));
 
 // Start the API server
 app.listen(PORT, function() {

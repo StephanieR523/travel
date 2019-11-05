@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import MyNavBar from '../components/Navbar';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Login from '../components/Login';
-
+import Register from '../components/Register';
 class Users extends Component {
     state = {
         users: [],
@@ -13,15 +12,15 @@ class Users extends Component {
 }
 
 
-function SignIn(){
+function Registration(){
     return(
         <Router>
             <MyNavBar />
             <div>
-                <Login />
+                <Register />
             </div>
         </Router>
     );
 }
 
-export default SignIn;
+export default Registration;

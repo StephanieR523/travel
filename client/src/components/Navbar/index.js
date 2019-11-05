@@ -13,7 +13,7 @@ return (
 <Navbar bg="#ffffff">
    
     <Navbar.Brand
-    href="#home">
+    href="/">
         <img
         src= {logo}
         width="125"
@@ -34,7 +34,7 @@ return (
       <Nav.Link href="/favorites">favorites</Nav.Link>
     </Nav.Item>
     <Nav.Item className="justify-content-end">
-      <Nav.Link href="/signin">sign in </Nav.Link>
+      <Nav.Link href="/register">register </Nav.Link>
     </Nav.Item>
 
     </Navbar.Collapse>

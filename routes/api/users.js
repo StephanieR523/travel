@@ -3,8 +3,16 @@ const _ = require('lodash');
 const { User, validate } = require('../../models/user');
 const express = require('express');
 const router = express.Router();
+
+const travelController = require("../../controllers/travelController");
+
+router.route("/")
+.get(travelController.findAll)
+.post(travelController.create);
+
+
  
-router.post('/register', async (req, res) => {
+router.post('/', async (req, res) => {
     // First Validate The Request
     const { error } = validate(req.body);
     if (error) {
