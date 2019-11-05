@@ -73,8 +73,8 @@ class MyNavBar extends React.Component {
               href="#home">
               <img
                 src={logo}
-                width="125"
-                height="80"
+                width="330"
+                height="175"
                 className="d-inline-block align-top"
                 alt="logo"
               />
