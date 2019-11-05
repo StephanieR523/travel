@@ -1,6 +1,6 @@
-import React, { Component } from "react";
+import React  from "react";
 import MyNavBar from '../components/Navbar';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 // import MyCard from './components/Card';
 import MyCarousel from '../components/Carousel';
 import MyCard from "../components/Card";
