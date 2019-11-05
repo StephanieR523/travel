@@ -8,7 +8,8 @@ class MyCard extends React.Component {
   render(props) {
     return (
 
-      <CardDeck>
+     <CardDeck className="wholedeck">
+
           <Card.Img className="cardImage" variant="top" src={this.props.Image} />
 
         <Card className="text-center">
