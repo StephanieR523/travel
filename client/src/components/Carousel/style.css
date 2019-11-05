@@ -7,25 +7,25 @@
 .title {
     color: ivory;
     margin-bottom: 0px;
-    background: rgba(167, 167, 167, 0.486); 
+    background: rgba(110, 110, 110, 0.575);
     width: 275px; 
     text-align: center;
     margin-left: 500px;
     
 }
 .description {
-    margin-bottom: 80px;
-    background: rgba(167, 167, 167, 0.486); 
+    margin-bottom: 40px;
+    background: rgba(110, 110, 110, 0.575); 
     width: 275px;
     margin-left: 500px;
     font-size: 16px;
 }
 .favbuttonc {
-    margin-bottom: 300px;
+    margin-bottom: 350px;
     background-color: #f8a72ec5;
     border-color: #f8a72e96; 
     border-radius: 12px;
-    margin-left: 535px;
+    margin-left: 475px;
 }
 .favbuttonc:hover {
     background-color: #f8a72e;
