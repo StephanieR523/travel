@@ -1,0 +1,19 @@
+.maplogo {
+    margin-left: 50px;
+}
+.signinLink{
+    color: #9bd4e4; 
+    font-weight: bold;
+}
+.signinLink:hover{
+    color: #59767e; 
+    font-weight: bold;
+}
+.favoritesLink{
+    color: #f8a72e; 
+    font-weight: bold;
+}
+.favoritesLink:hover{
+    color: #545454; 
+    font-weight: bold;
+}
