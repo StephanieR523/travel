@@ -15,20 +15,9 @@ if (process.env.NODE_ENV === "production") {
 // Add routes, both API and view
 app.use(routes);
 
-app.get("/api/users", function (req, res) {
-  db.User.find({}, function (err, found) {
-      if (err) {
-          console.log(err);
-      }
-      else {
-          res.json(found);
-      }
-  })
-})
-
 // Connect to the Mongo DB
 mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost/user-test"
+  process.env.MONGODB_URI || "mongodb://localhost/mytinerary"
 );
 
 // Start the API server

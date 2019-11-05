@@ -1,40 +1,27 @@
-const mongoose = require("mongoose");
-const Joi = require('joi');
-const Schema = mongoose.Schema;
-
-const userSchema = new Schema({
-    name: {
-        type: String,
-        required: true,
-        minlength: 5,
-        maxlength: 50
-    },
-    email: {
-        type: String,
-        required: true,
-        minlength: 5,
-        maxlength: 255,
-        unique: true
-    },
-    password: {
-        type: String,
-        required: true,
-        minlength: 5,
-        maxlength: 1024
-    }
+const mongoose = require('mongoose');
+const bcrypt = require('bcrypt');
+const UserSchema = new mongoose.Schema({
+  email: {
+    type: String,
+    default: ''
+  },
+  password: {
+    type: String,
+    default: ''
+  },
+  isDeleted: {
+    type: Boolean,
+    default: false
+  },
+  signUpDate: {
+    type: Date,
+    default: Date.now()
+  }
 });
-
-const User = mongoose.model("User", userSchema);
-
-
-validateUser = user => {
-    const schema = {
-        name: Joi.string().min(5).max(50).required(),
-        email: Joi.string().min(5).max(255).required().email(),
-        password: Joi.string().min(5).max(255).required()
-    };
-    return Joi.validate(user, schema);  
-}
-
-exports.User = User;
-exports.validate = validateUser;
+UserSchema.methods.generateHash = function(password) {
+  return bcrypt.hashSync(password, bcrypt.genSaltSync(8), null);
+};
+UserSchema.methods.validPassword = function(password) {
+  return bcrypt.compareSync(password, this.password);
+};
+module.exports = mongoose.model('User', UserSchema);
