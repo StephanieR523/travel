@@ -22,14 +22,14 @@
 }
 .favbuttonc {
     margin-bottom: 200px;
-    background-color: #ffbd59c5;
-    border-color: #ffbd5996; 
+    background-color: #f8a72ec5;
+    border-color: #f8a72e96; 
     border-radius: 12px;
     margin-left: 535px;
 }
 .favbuttonc:hover {
-    background-color: #ffbd59;
-    border-color: #ffbd5996;
+    background-color: #f8a72e;
+    border-color: #f8a72e96;
     border-radius: 12px;
 
 
