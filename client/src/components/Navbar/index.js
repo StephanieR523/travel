@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
-// import { Link } from "react-router-dom";
 import { Navbar, Nav, Form, FormControl, Button, } from 'react-bootstrap';
+import ls from "local-storage";
 import MyCard from "../Card/index";
 import logo from '../../logo1.png';
 import './style.css'
