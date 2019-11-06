@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router } from 'react-router-dom';
 import MyNavBar from '../components/Navbar';
+import FavoritesCard from "../components/Favorites/index"
 import MyCard from "../components/Card";
 import ls from "local-storage";
 
