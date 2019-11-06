@@ -1,0 +1,25 @@
+.cardFooter{
+    background:white;
+    border: white;
+
+
+}
+.cardBody{
+    border: black;
+    
+}
+.text-center{
+    border: gray;
+}
+.cardImage{
+    border: black;
+}
+.wholedeck{
+    border:black;
+
+}
+.favbutton{
+    background-color: #9bd4e4; 
+    border: #9bd4e4;
+    margin-left: 10px;
+}

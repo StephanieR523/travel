@@ -1,41 +1,47 @@
 import React from 'react';
 import { Button, CardDeck, Card } from 'react-bootstrap';
-import './style.css'
-import rio from './rio.jpg'
-import pool from './pool.JPG'
-import newz from './newz.jpg'
-// const cardStyle = {
-//         color: #525252;
-//         font-weight: bold
-//     }
+import './style.css';
+
 
 class FavoritesCard extends React.Component {
 
-  state = {
-    value = ""
-  }
-
-  render() {
+  render(props) {
     return (
 
-      <CardDeck>
+      <CardDeck className="wholedeck">
+
+        <Card.Img className="cardImage" variant="top" src=
+          {this.props.Image}
+        />
+
         <Card className="text-center">
-          <Card.Img variant="top" src={rio} />
-          <Card.Body>
-            <Card.Title>Attraction</Card.Title>
+
+          <Card.Body className="cardBody">
+
+            <Card.Title>
+              {this.props.Name}
+            </Card.Title>
+
             <Card.Text>
-              Rating
-                </Card.Text>
+              <p className="ratingwords"> rating:
+              {this.props.Rating}
+              </p>
+            </Card.Text>
+            
+            <Card.Text>
+              <p className="pricewords"> price:
+              {this.props.CurrencyType} {this.props.Price}
+              </p>
+            </Card.Text>
+
           </Card.Body>
-          <Card.Footer>
-            <Button variant="primary" size="small" className="favbutton">Delete Destiantion</Button>
-            <small className="text-muted">  Price</small>
-          </Card.Footer>
+
         </Card>
+        <Card.Footer className="cardFooter">
+          <Button variant="primary" size="small" className="favbutton"> remove </Button>
+        </Card.Footer>
+
       </CardDeck>
-
-
-
 
     )
   }

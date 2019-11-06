@@ -77,11 +77,11 @@ class MyNavBar extends React.Component {
           <Navbar bg="#ffffff">
 
             <Navbar.Brand
-              href="#home">
+              href="/">
               <img
                 src={logo}
-                width="125"
-                height="80"
+                width="330"
+                height="175"
                 className="d-inline-block align-top"
                 alt="logo"
               />
@@ -96,7 +96,7 @@ class MyNavBar extends React.Component {
               >
                 <FormControl
                   type="text"
-                  placeholder="Search"
+                  placeholder="where to?"
                   value={this.state.value}
                   onChange={this.handleChange}
                 />
@@ -104,15 +104,15 @@ class MyNavBar extends React.Component {
                   type="submit"
                   value="submit"
                   variant="outline-info">
-                  Search
+                  search
                 </Button>
               </Form>
 
               <Nav.Item className="justify-content-end">
-                <Nav.Link href="/favorites" onCLick={() => { console.log("hello") }}>favorites</Nav.Link>
+                <Nav.Link href="/favorites" className="favoritesLink">favorites</Nav.Link>
               </Nav.Item>
               <Nav.Item className="justify-content-end">
-                <Nav.Link href="/signin">sign in </Nav.Link>
+                <Nav.Link href="/signin" className="signinLink">sign in </Nav.Link>
               </Nav.Item>
 
             </Navbar.Collapse>

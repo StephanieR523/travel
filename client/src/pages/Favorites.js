@@ -1,7 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router } from 'react-router-dom';
 import MyNavBar from '../components/Navbar';
-import MyCarousel from '../components/Carousel';
 import MyCard from "../components/Card";
 import ls from "local-storage";
 
@@ -26,11 +25,19 @@ class FavoritesPage extends React.Component {
           </div>
 
           <div>
-            <MyCarousel />
+            <FavoritesCard />
           </div>
 
           <div>
-            <MyCard />
+            <FavoritesCard />
+          </div>
+
+          <div>
+            <FavoritesCard />
+          </div>
+
+          <div>
+            <FavoritesCard />
           </div>
           {
             ls.get("data").map((data) => {
