@@ -1,27 +1,35 @@
-import React  from "react";
+import React from "react";
 import MyNavBar from '../components/Navbar';
 import { BrowserRouter as Router } from 'react-router-dom';
-// import MyCard from './components/Card';
 import MyCarousel from '../components/Carousel';
-import MyCard from "../components/Card";
+import MyCard from "../components/Card"
+import FavoritesCard from "../components/Favorites"
 
 
+class FavoritesPage extends React.Component {
 
+  render() {
+    return (
+      <Router>
+        
+        <div>
+        <MyNavBar />
+        </div>
+  
+        <div>
+          <FavoritesCard />
+        </div>
+        <FavoritesCard/>
+        <div>
+        <FavoritesCard/>
+        </div>
+  
+        
+      </Router>
+    );
+  }
 
-function Favorites() {
-  return (
-    <Router>
-      <MyNavBar />
-     <div>
-     <MyCarousel />  
-     </div><MyCard />
-
-     <div>
-      
-      </div> 
-
-    </Router>
-  );
 }
 
-export default Favorites;
+
+export default FavoritesPage;
