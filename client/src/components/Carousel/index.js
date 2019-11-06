@@ -25,7 +25,7 @@ class MyCarousel extends React.Component {
             <h3 className="title">Athens Adventures</h3>
             <p className="description">8.6/ 10 stars</p>
             <p className="description2">$50</p>
-            <Button variant="primary" size="small" className="favbuttonc">favorite</Button>
+            <Button variant="primary" size="small" className="favbuttonc">explore</Button>
           </Carousel.Caption>
 
         </Carousel.Item>
@@ -37,10 +37,10 @@ class MyCarousel extends React.Component {
           />
 
           <Carousel.Caption>
-            <h3 className="title">Experience Beijing</h3>
-            <p className="description">7.5/ 10 stars</p>
-            <p className="description2">starting at $10</p>
-            <Button variant="primary" size="small" className="favbuttonc">favorite</Button>
+            <h3 className="title">Paris Art and Food Tours</h3>
+            <p className="description">7.7/ 10 stars</p>
+            <p className="description2">starting at $40</p>
+            <Button variant="primary" size="small" className="favbuttonc">explore</Button>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -51,10 +51,10 @@ class MyCarousel extends React.Component {
           />
 
           <Carousel.Caption>
-            <h3 className="title">Dive into the Bahamas</h3>
-            <p className="description">9.6/ 10 stars</p>
-            <p className="description2">starting at $75</p>
-            <Button variant="primary" size="small" className="favbuttonc">favorite</Button>
+            <h3 className="title">Dive into Miami</h3>
+            <p className="description">8.9/ 10 stars</p>
+            <p className="description2">starting at $15</p>
+            <Button variant="primary" size="small" className="favbuttonc">explore</Button>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
