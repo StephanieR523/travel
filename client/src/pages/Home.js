@@ -29,12 +29,12 @@ class Home extends React.Component {
 <Card className="text-center">
 
 <Card.Body className="cardBody">
-  <Card.Title>  ghd </Card.Title>
+  <Card.Title>  Rome Bus Tours </Card.Title>
   <Card.Text>
   <p className="ratingwords"> rating: 8 </p>
   </Card.Text>
   <Card.Text>
-  <p className="pricewords"> price: $5 {this.props.Price} </p>
+  <p className="pricewords"> price: $50 (lunch included) {this.props.Price} </p>
   </Card.Text>
 </Card.Body>
 
