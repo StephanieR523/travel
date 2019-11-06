@@ -2,7 +2,7 @@ import React from "react";
 import MyNavBar from '../components/Navbar';
 import { BrowserRouter as Router } from 'react-router-dom';
 import MyCarousel from '../components/Carousel';
-import MyCard from "../components/Card"
+import HomeCard from "../components/Card"
 
 
 class Home extends React.Component {
@@ -20,7 +20,7 @@ class Home extends React.Component {
         </div>
   
         <div>
-          <MyCard />
+          <HomeCard />
         </div>
   
       </Router>

@@ -70,7 +70,7 @@ class MyNavBar extends React.Component {
           <Navbar bg="#ffffff">
 
             <Navbar.Brand
-              href="#home">
+              href="/">
               <img
                 src={logo}
                 width="330"
