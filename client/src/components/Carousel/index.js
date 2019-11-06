@@ -22,8 +22,9 @@ class MyCarousel extends React.Component {
           />
 
           <Carousel.Caption>
-            <h3 className="title">Tour Greece</h3>
-            <p className="description">8.6 rating   $100/ person</p>
+            <h3 className="title">Athens Adventures</h3>
+            <p className="description">8.6/ 10 stars</p>
+            <p className="description2">$50</p>
             <Button variant="primary" size="small" className="favbuttonc">favorite</Button>
           </Carousel.Caption>
 
@@ -36,8 +37,9 @@ class MyCarousel extends React.Component {
           />
 
           <Carousel.Caption>
-            <h3 className="title">The Great Wall</h3>
-            <p className="description">7.5 rating   $30/ person</p>
+            <h3 className="title">Experience Beijing</h3>
+            <p className="description">7.5/ 10 stars</p>
+            <p className="description2">starting at $10</p>
             <Button variant="primary" size="small" className="favbuttonc">favorite</Button>
           </Carousel.Caption>
         </Carousel.Item>
@@ -49,8 +51,9 @@ class MyCarousel extends React.Component {
           />
 
           <Carousel.Caption>
-            <h3 className="title">Beach Getaways</h3>
-            <p className="description">9.6 rating   $10/ person</p>
+            <h3 className="title">Dive into the Bahamas</h3>
+            <p className="description">9.6/ 10 stars</p>
+            <p className="description2">starting at $75</p>
             <Button variant="primary" size="small" className="favbuttonc">favorite</Button>
           </Carousel.Caption>
         </Carousel.Item>
