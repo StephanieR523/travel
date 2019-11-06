@@ -3,10 +3,10 @@ import MyNavBar from '../components/Navbar';
 import { BrowserRouter as Router } from 'react-router-dom';
 import MyCarousel from '../components/Carousel';
 import { Button, CardDeck, Card, Image, Jumbotron } from 'react-bootstrap';
-import rome from './rome.jpg';
+import tokyo from './tokyo.jpeg';
 import './style.css';
-import park from './park.JPG';
 import us from './us.png';
+import milan from './milan.jpeg';
 
 class Home extends React.Component {
 
@@ -24,35 +24,33 @@ class Home extends React.Component {
   
         <div>
           <Jumbotron className="jumbo">
-          <h2>popular attractions</h2>
+          <h2>popular destinations</h2>
           </Jumbotron>
         </div>
         <div>
           
 <CardDeck className="wholedeck">
 
-      <Card.Img className="cardImage" variant="top" src={rome} />
+      <Card.Img className="cardImage" variant="top" src={tokyo} />
 
 <Card className="text-center">
 
   <Card.Body className="cardBody">
-    <Card.Title>  Rome Bus Tours </Card.Title>
+    <Card.Title> Tokyo, Japan </Card.Title>
     <Card.Text>
   <p className="ratingwords"> 8.8/ 10 stars </p>
   </Card.Text>
   <Card.Text>
-  <p className="pricewords"> $50 (lunch included) {this.props.Price} </p>
+  <p className="pricewords"> $40 </p>
   </Card.Text>
   </Card.Body>
 
 </Card>
 
 <Card.Footer className="cardFooter">
-  <Button variant="primary" size="small" className="favbutton"> favorite </Button>
+  <Button variant="primary" size="small" className="favbutton"> explore </Button>
 </Card.Footer>
 </CardDeck>
-
-
 
 </div>
 
@@ -60,23 +58,23 @@ class Home extends React.Component {
 
         <CardDeck className="wholedeck">
 
-<Card.Img className="cardImage" variant="top" src={park} />
+<Card.Img className="cardImage" variant="top" src={milan} />
 
 <Card className="text-center">
 
 <Card.Body className="cardBody">
-  <Card.Title>  Aruba ATV Tour </Card.Title>
+  <Card.Title> Milan, Italy </Card.Title>
   <Card.Text>
   <p className="ratingwords"> 10/ 10 stars </p>
   </Card.Text>
   <Card.Text>
-  <p className="pricewords"> $200  </p>
+  <p className="pricewords"> $50  </p>
   </Card.Text>
 </Card.Body>
 
 </Card>
 <Card.Footer className="cardFooter">
-  <Button variant="primary" size="small" className="favbutton"> favorite </Button>
+  <Button variant="primary" size="small" className="favbutton"> explore </Button>
 </Card.Footer>
 </CardDeck>
 </div>
