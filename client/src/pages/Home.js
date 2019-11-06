@@ -7,6 +7,7 @@ import tokyo from './tokyo.jpeg';
 import './style.css';
 import us from './us.png';
 import milan from './milan.jpeg';
+import rome from './rome.jpg';
 
 class Home extends React.Component {
 
@@ -27,11 +28,11 @@ class Home extends React.Component {
           <h2>popular destinations</h2>
           </Jumbotron>
         </div>
-        <div>
+        {/* <div>
           
 <CardDeck className="wholedeck">
 
-      <Card.Img className="cardImage" variant="top" src={tokyo} />
+      <Card.Img className="cardImage2" variant="top" src={tokyo} />
 
 <Card className="text-center">
 
@@ -52,7 +53,55 @@ class Home extends React.Component {
 </Card.Footer>
 </CardDeck>
 
-</div>
+</div> */}
+
+
+<CardDeck className="wholedeck">
+            <Card className="text-center">
+              <Card.Img variant="top" src={milan}/>
+              <Card.Body>
+                <Card.Title>Milan, Spain</Card.Title>
+                <Card.Text>
+                  8.9/ 10 stars
+                </Card.Text>
+              </Card.Body>
+              <Card.Footer className="footer">
+                   <Button variant="primary" size="small" className="favbutton">explore</Button>
+                
+              </Card.Footer>
+            </Card>
+            <Card className="text-center">
+              <Card.Img variant="top" src={tokyo} />
+              <Card.Body>
+                <Card.Title>Tokyo, Japan</Card.Title>
+                <Card.Text>
+                  8.4/ 10 stars
+                </Card.Text>
+              </Card.Body>
+              <Card.Footer className="footer">
+              <Button variant="primary" size="small" className="favbutton">explore</Button>
+          
+              </Card.Footer>
+            </Card>
+            <Card className="text-center">
+              <Card.Img variant="top" src={rome} />
+              <Card.Body>
+                <Card.Title>Rome, Italy</Card.Title>
+                <Card.Text>
+                  9/ 10 stars
+                </Card.Text>
+              </Card.Body>
+              <Card.Footer className="footer">
+              <Button variant="primary" size="small" className="favbutton">explore</Button>
+                
+
+              </Card.Footer>
+            </Card>
+          </CardDeck>
+
+
+
+{/* 
 
 <div>
 
@@ -77,7 +126,7 @@ class Home extends React.Component {
   <Button variant="primary" size="small" className="favbutton"> explore </Button>
 </Card.Footer>
 </CardDeck>
-</div>
+</div> */}
 
   <div>
     <Jumbotron className="jumbo2">
