@@ -1,67 +1,38 @@
 import React from 'react';
 import {Button, CardDeck, Card} from 'react-bootstrap';
-import './style.css'
-import rio from './rio.jpg'
-import pool from './pool.JPG'
-import newz from './newz.jpg'
-// const cardStyle = {
-//         color: #525252;
-//         font-weight: bold
-//     }
+import './style.css';
+
 
 class FavoritesCard extends React.Component {
 
-    render() {
-        return (
+  render(props) {
+    return (
 
-            <CardDeck>
-            <Card className="text-center">
-              <Card.Img variant="top" src={newz}/>
-              <Card.Body>
-                <Card.Title>Attraction</Card.Title>
-                <Card.Text>
-                  Rating
-                </Card.Text>
-              </Card.Body>
-              <Card.Footer>
-                   <Button variant="primary" size="small" className="favbutton">favorite</Button>
-                <small className="text-muted">  Price</small>
-              </Card.Footer>
-            </Card>
-            <Card className="text-center">
-              <Card.Img variant="top" src={pool} />
-              <Card.Body>
-                <Card.Title>Attraction</Card.Title>
-                <Card.Text>
-                  Rating{' '}
-                </Card.Text>
-              </Card.Body>
-              <Card.Footer>
-              <Button variant="primary" size="small" className="favbutton">favorite</Button>
-                <small className="text-muted">  Price</small>
-              </Card.Footer>
-            </Card>
-            <Card className="text-center">
-              <Card.Img variant="top" src={rio} />
-              <Card.Body>
-                <Card.Title>Attraction</Card.Title>
-                <Card.Text>
-                  Rating
-                </Card.Text>
-              </Card.Body>
-              <Card.Footer>
-              <Button variant="primary" size="small" className="favbutton">favorite</Button>
-                <small className="text-muted">  Price</small>
+     <CardDeck className="wholedeck">
 
-              </Card.Footer>
-            </Card>
-          </CardDeck>
+          <Card.Img className="cardImage" variant="top" src={this.props.Image} />
 
+        <Card className="text-center">
 
+          <Card.Body className="cardBody">
+            <Card.Title> {this.props.Name} </Card.Title>
+            <Card.Text>
+              <p className="ratingwords"> rating: {this.props.Rating} </p>
+            </Card.Text>
+            <Card.Text>
+              <p className="pricewords"> price: {this.props.CurrencyType} {this.props.Price} </p>
+            </Card.Text>
+          </Card.Body>
+          
+        </Card>
+          <Card.Footer className="cardFooter">
+            <Button variant="primary" size="small" className="favbutton"> remove </Button>
+          </Card.Footer>
+        
+      </CardDeck>
 
-
-        ) 
-    }
+    )
+  }
 }
 
 export default FavoritesCard;

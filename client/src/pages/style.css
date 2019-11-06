@@ -1,0 +1,28 @@
+.jumbo{
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 110px;
+    background-image:url(./plane.JPG);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 0px;
+    background-color: white;
+    color: rgb(136, 136, 136);
+    font-weight: bold;
+
+}
+.pricewords{
+    color: rgb(136, 136, 136);
+}
+.ratingwords{
+    color:#9bd4e4; 
+}
+.cardImage{
+    width:300px;
+    height: 200px;
+}
+.wholedeck{
+    margin-top:10px;
+    margin-bottom: 10px;
+
+}

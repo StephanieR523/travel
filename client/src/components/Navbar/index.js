@@ -58,6 +58,7 @@ class MyNavBar extends React.Component {
         }
         this.forceUpdate()
       })
+      .catch(err => console.log(err));
   }
 
 
@@ -70,7 +71,7 @@ class MyNavBar extends React.Component {
           <Navbar bg="#ffffff">
 
             <Navbar.Brand
-              href="#home">
+              href="/">
               <img
                 src={logo}
                 width="330"
@@ -89,7 +90,7 @@ class MyNavBar extends React.Component {
               >
                 <FormControl
                   type="text"
-                  placeholder="Search"
+                  placeholder="where to?"
                   value={this.state.value}
                   onChange={this.handleChange}
                 />
@@ -97,15 +98,15 @@ class MyNavBar extends React.Component {
                   type="submit"
                   value="submit"
                   variant="outline-info">
-                  Search
+                  search
                 </Button>
               </Form>
 
               <Nav.Item className="justify-content-end">
-                <Nav.Link href="/favorites">favorites</Nav.Link>
+                <Nav.Link href="/favorites" className="favoritesLink">favorites</Nav.Link>
               </Nav.Item>
               <Nav.Item className="justify-content-end">
-                <Nav.Link href="/signin">sign in </Nav.Link>
+                <Nav.Link href="/register" className="signinLink">Register/Login </Nav.Link>
               </Nav.Item>
 
             </Navbar.Collapse>
