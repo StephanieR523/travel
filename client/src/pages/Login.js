@@ -1,18 +1,16 @@
 import React, { Component } from "react";
 import MyNavBar from '../components/Navbar';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Register from '../components/Register';
-
-
-function Registration(){
+import Signin from '../components/Signin';
+function Login(){
     return(
         <Router>
             <MyNavBar />
             <div>
-                <Register />
+            <Signin />    
             </div>
         </Router>
     );
 }
 
-export default Registration;
+export default Login;

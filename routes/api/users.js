@@ -8,8 +8,12 @@ const travelController = require("../../controllers/travelController");
 
 router.route("/")
 .get(travelController.findAll)
-.post(travelController.create);
+.post(travelController.create)
+.delete(travelController.remove);
 
+router.route("/:id")
+.get(travelController.findById)
+.delete(travelController.remove);
 
  
 router.post('/', async (req, res) => {
