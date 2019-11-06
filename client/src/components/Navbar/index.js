@@ -1,7 +1,8 @@
 import React from "react";
 import axios from "axios";
-// import { Link } from "react-router-dom";
+import { Link, Router } from "react-router-dom";
 import { Navbar, Nav, Form, FormControl, Button, } from 'react-bootstrap';
+import ls from "local-storage";
 import MyCard from "../Card/index";
 import logo from '../../logo1.png';
 import './style.css'
@@ -13,12 +14,18 @@ class MyNavBar extends React.Component {
     this.state = {
       value: '',
       dataArray: [],
+      favorites: []
     };
+
+    // this.context.Router.push({
+    //   pathname: '/favorites',
+    //   state: { favorites: this.state.favorites }
+    // })
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
-
+ 
   handleChange(event) {
     this.setState({ value: event.target.value });
   }
@@ -102,7 +109,7 @@ class MyNavBar extends React.Component {
               </Form>
 
               <Nav.Item className="justify-content-end">
-                <Nav.Link href="/favorites">favorites</Nav.Link>
+                <Nav.Link href="/favorites" onCLick={() => { console.log("hello") }}>favorites</Nav.Link>
               </Nav.Item>
               <Nav.Item className="justify-content-end">
                 <Nav.Link href="/signin">sign in </Nav.Link>
@@ -116,16 +123,31 @@ class MyNavBar extends React.Component {
         <div>
           {
             this.state.dataArray.map((data) => {
+
+
               console.log(data)
               return (
                 <div>
-                  <MyCard 
+                  <MyCard
+
                     Image={data.Image}
                     Name={(data.Name)}
                     Price={(data.Price)}
                     Rating={(data.Rating)}
                     CurrencyType={(data.CurrencyType)}
-                  />
+                  >
+                  </MyCard>
+
+
+                  <Button variant="primary" size="small" onClick={(event) => {
+                    // ls.set(data)
+                    // console.log(this.state.favorites)
+                    this.state.favorites.push(data)
+                    ls.set("data", this.state.favorites)
+                    // console.log(this.state.favorites)
+                    // console.log(data)
+                  }} className="favbutton"> Add To Favorites </Button>
+
                 </div>
               )
             })

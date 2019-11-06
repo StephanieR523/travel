@@ -25,7 +25,7 @@ class MyCard extends React.Component {
           
         </Card>
           <Card.Footer className="cardFooter">
-            <Button variant="primary" size="small" className="favbutton"> Add To Favorites </Button>
+            {/* <Button variant="primary" size="small" onClick={() => console.log("hello")}className="favbutton"> Add To Favorites {} </Button> */}
           </Card.Footer>
         {/* <Card className="text-center">
           <Card.Img variant="top" src={pool} />

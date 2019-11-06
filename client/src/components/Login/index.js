@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import {Form, Button } from 'react-bootstrap';
+import { Form, Button } from 'react-bootstrap';
 import './index.css';
 class Login extends Component {
     state = {
@@ -38,7 +38,7 @@ class Login extends Component {
                     </Form.Group>
                     <Button variant="primary" type="submit" onClick={this.handleFormSubmit}>
                         Log In
-            </Button>
+                    </Button>
                 </form>
 
             </div>
