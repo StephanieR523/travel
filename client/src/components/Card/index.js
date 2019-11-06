@@ -27,49 +27,10 @@ class MyCard extends React.Component {
           <Card.Footer className="cardFooter">
             {/* <Button variant="primary" size="small" onClick={() => console.log("hello")}className="favbutton"> Add To Favorites {} </Button> */}
           </Card.Footer>
-        {/* <Card className="text-center">
-          <Card.Img variant="top" src={pool} />
-          <Card.Body>
-            <Card.Title>Attraction</Card.Title>
-            <Card.Text>
-              Rating{' '}
-            </Card.Text>
-          </Card.Body>
-          <Card.Footer>
-            <Button variant="primary" size="small" className="favbutton">favorite</Button>
-            <small className="text-muted">  Price</small>
-          </Card.Footer>
-        </Card>
-        <Card className="text-center">
-          <Card.Img variant="top" src={rio} />
-          <Card.Body>
-            <Card.Title>Attraction</Card.Title>
-            <Card.Text>
-              Rating
-                </Card.Text>
-          </Card.Body>
-          <Card.Footer>
-            <Button variant="primary" size="small" className="favbutton">favorite</Button>
-            <small className="text-muted">  Price</small>
-
-          </Card.Footer>
-        </Card> */}
+        
       </CardDeck>
 
-      // <div class="card" style={cardStyle}>
-      //   <img src={this.props.Image} class="card-img-top" alt="Image" style={imageStyle}></img>
-      //   <div class="card-header">
-      //     <h1> Name : {this.props.Name} </h1>
-      //   </div>
-
-      //   <div class="card-body">
-      //     <p class="card-title"> Price: {this.props.Price} </p>
-      //     <p class="card-text"> Rating: {this.props.Rating} </p>
-      //     <a href="#" class="btn btn-primary"> Add To Favorites </a>
-      //   </div>
-
-      // </div>
-
+      
 
 
 
