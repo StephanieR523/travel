@@ -2,10 +2,11 @@ import React from "react";
 import MyNavBar from '../components/Navbar';
 import { BrowserRouter as Router } from 'react-router-dom';
 import MyCarousel from '../components/Carousel';
-import { Button, CardDeck, Card, Jumbotron } from 'react-bootstrap';
+import { Button, CardDeck, Card, Image, Jumbotron } from 'react-bootstrap';
 import rome from './rome.jpg';
 import './style.css';
 import park from './park.JPG';
+import us from './us.png';
 
 class Home extends React.Component {
 
@@ -79,6 +80,19 @@ class Home extends React.Component {
 </Card.Footer>
 </CardDeck>
 </div>
+
+  <div>
+    <Jumbotron className="jumbo2">
+      <h2>top tourguides</h2>
+    </Jumbotron>
+  </div>
+
+  <div>
+    <Image className="tourguides" src={us}></Image>
+  </div>
+
+
+
       </Router>
     );
   }
