@@ -7,25 +7,33 @@
 .title {
     color: ivory;
     margin-bottom: 0px;
-    background: rgba(110, 110, 110, 0.575);
-    width: 275px; 
+    background: rgba(148, 148, 148, 0.575); 
+    width: 320px; 
     text-align: center;
-    margin-left: 500px;
+    margin-left: 68%;
+    font-size: 50px;
     
 }
 .description {
+    margin-bottom: 0px;
+    background: rgba(148, 148, 148, 0.575); 
+    width: 320px;
+    margin-left: 68%;
+    font-size: 20px;
+}
+.description2 {
     margin-bottom: 40px;
-    background: rgba(110, 110, 110, 0.575); 
-    width: 275px;
-    margin-left: 500px;
-    font-size: 16px;
+    background: rgba(148, 148, 148, 0.575); 
+    width: 320px;
+    margin-left: 68%;
+    font-size: 20px;
 }
 .favbuttonc {
     margin-bottom: 350px;
     background-color: #f8a72ec5;
     border-color: #f8a72e96; 
     border-radius: 12px;
-    margin-left: 475px;
+    margin-left: 70%;
 }
 .favbuttonc:hover {
     background-color: #f8a72e;

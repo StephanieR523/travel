@@ -5,33 +5,34 @@ import FavoritesCard from "../components/Favorites";
 
 class FavoritesPage extends React.Component {
 
+
+
   
-    render() {
-      return (
-        <Router>
-          
-          <div>
-          <MyNavBar />
-          </div>
-    
-          <div>
-            <FavoritesCard />
-          </div>
-          <FavoritesCard/>
-          <div>
-          <FavoritesCard/>
-          </div>
-          <div>
-          <FavoritesCard/>
-          </div>
-    
-          
-        </Router>
-      );
-    }
+  render() {
+    return (
+      <Router>
+        
+        <div>
+        <MyNavBar />
+        </div>
   
+        <div>
+          <FavoritesCard />
+        </div>
+        <FavoritesCard/>
+        <div>
+        <FavoritesCard/>
+        </div>
+        <div>
+        <FavoritesCard/>
+        </div>
+  
+        
+      </Router>
+    );
   }
-  
-  
-  export default FavoritesPage;
-  
+
+}
+
+
+export default FavoritesPage;
