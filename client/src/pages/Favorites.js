@@ -5,7 +5,7 @@ import MyCarousel from '../components/Carousel';
 import MyCard from "../components/Card";
 import ls from "local-storage";
 
-class Favorites extends React.Component {
+class FavoritesPage extends React.Component {
 
   constructor(props) {
     super(props);
@@ -63,4 +63,4 @@ class Favorites extends React.Component {
 
 
 
-export default Favorites;
+export default FavoritesPage;
