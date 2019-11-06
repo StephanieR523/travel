@@ -26,7 +26,7 @@ class FavoritesCard extends React.Component {
           
         </Card>
           <Card.Footer className="cardFooter">
-            <Button variant="primary" size="small" className="favbutton"> Remove </Button>
+            <Button variant="primary" size="small" className="favbutton"> remove </Button>
           </Card.Footer>
         
       </CardDeck>

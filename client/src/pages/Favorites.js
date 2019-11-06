@@ -2,12 +2,14 @@ import React from "react";
 import MyNavBar from '../components/Navbar';
 import { BrowserRouter as Router } from 'react-router-dom';
 import MyCarousel from '../components/Carousel';
-import MyCard from "../components/Card"
-import FavoritesCard from "../components/Favorites"
+import MyCard from "../components/Card";
+import FavoritesCard from "../components/Favorites";
+
 
 
 class FavoritesPage extends React.Component {
 
+  
   render() {
     return (
       <Router>
