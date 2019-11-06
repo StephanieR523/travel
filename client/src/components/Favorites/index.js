@@ -17,10 +17,10 @@ class FavoritesCard extends React.Component {
           <Card.Body className="cardBody">
             <Card.Title> {this.props.Name} </Card.Title>
             <Card.Text>
-              <p> Rating: {this.props.Rating} </p>
+              <p className="ratingwords"> Rating: {this.props.Rating} </p>
             </Card.Text>
             <Card.Text>
-              <p> Price: {this.props.CurrencyType} {this.props.Price} </p>
+              <p className="pricewords"> Price: {this.props.CurrencyType} {this.props.Price} </p>
             </Card.Text>
           </Card.Body>
           

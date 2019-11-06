@@ -2,17 +2,24 @@
     background:white;
     border: white;
 
+
 }
 .cardBody{
-    border:white;
+    border: black;
+    
 }
 .text-center{
     border: gray;
 }
 .cardImage{
-    border: white;
+    border: black;
 }
 .wholedeck{
-    border:white;
-    
+    border:black;
+
+}
+.favbutton{
+    background-color: #9bd4e4; 
+    border: #9bd4e4;
+    margin-left: 10px;
 }

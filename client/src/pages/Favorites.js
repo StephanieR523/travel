@@ -23,6 +23,9 @@ class FavoritesPage extends React.Component {
         <div>
         <FavoritesCard/>
         </div>
+        <div>
+        <FavoritesCard/>
+        </div>
   
         
       </Router>
