@@ -5,6 +5,8 @@ const passport = require("passport");
 const users = require("./routes/api/users");
 const cors = require('cors');
 const app = express();
+const path = require('path');
+const router = require("express").Router();
 app.use(cors())
 app.use(cors({
   'allowedHeaders': ['sessionId', 'Content-Type'],
@@ -39,10 +41,11 @@ require("./config/passport")(passport);
 // Routes
 app.use("/api/users", users);
 
-app.use(express.static(path.join(__dirname, '../client/build')));
-/*React root*/
-app.get('*', (req, res) => {
-res.sendFile(path.join(__dirname + '../client/build/index.html'));
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("client/build"));
+}
+router.use(function(req, res) {
+  res.sendFile(path.join(__dirname, "../client/build/index.html"));
 });
 
 
