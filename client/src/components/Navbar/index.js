@@ -111,7 +111,7 @@ class MyNavBar extends React.Component {
                 <Nav.Link href="/favorites" className="favoritesLink">favorites</Nav.Link>
               </Nav.Item>
               <Nav.Item className="justify-content-end">
-                <Nav.Link href="/signin" className="signinLink">sign in </Nav.Link>
+                <Nav.Link href="/register" className="signinLink">Register/Login </Nav.Link>
               </Nav.Item>
 
             </Navbar.Collapse>

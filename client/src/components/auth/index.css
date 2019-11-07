@@ -1,0 +1,26 @@
+.container{
+border-style: solid;
+border-color: turquoise;
+background-color:#f8a72ec5;
+}
+
+.button {
+    padding: 10px;
+}
+
+input,
+textarea {
+  display: block;
+  padding: .5rem .75rem;
+  width: 100%;
+  font-size: 1rem;
+  line-height: 1.25;
+  color: #55595c;
+  background-color: #fff;
+  background-image: none;
+  background-clip: padding-box;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 1px solid ;
+  border-left: 0;
+}
