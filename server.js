@@ -5,6 +5,8 @@ const passport = require("passport");
 const users = require("./routes/api/users");
 const cors = require('cors');
 const app = express();
+const path = require('path');
+const router = require("express").Router();
 app.use(cors())
 app.use(cors({
   'allowedHeaders': ['sessionId', 'Content-Type'],
@@ -31,6 +33,7 @@ mongoose
   .then(() => console.log("MongoDB successfully connected"))
   .catch(err => console.log(err));
   
+
 // Passport middleware
 app.use(passport.initialize());
 // Passport config
@@ -41,6 +44,9 @@ app.use("/api/users", users);
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
+router.use(function(req, res) {
+  res.sendFile(path.join(__dirname, "../client/build/index.html"));
+});
 
 
 
